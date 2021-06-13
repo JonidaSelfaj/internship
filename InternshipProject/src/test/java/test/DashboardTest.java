@@ -19,6 +19,7 @@ public class DashboardTest {
     @Test
     public void execute() {
         Driver.go(GlobalVariables.APP_URL);
+
         LoginPageSteps login = new LoginPageSteps();
         login.loginClick();
         login.login(GlobalVariables.EMAIL, GlobalVariables.PASSWORD);
