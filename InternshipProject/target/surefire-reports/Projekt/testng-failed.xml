@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Projekt]">
+  <listeners>
+    <listener class-name="internship.listener.ScreenShotListener"/>
+  </listeners>
+  <test thread-count="5" verbose="0" name="Commercial Test(failed)">
+    <classes>
+      <class name="test.RegisterTest">
+        <methods>
+          <include name="before"/>
+          <include name="after"/>
+          <include name="execute"/>
+        </methods>
+      </class> <!-- test.RegisterTest -->
+      <class name="test.DashboardTest">
+        <methods>
+          <include name="before"/>
+          <include name="execute"/>
+          <include name="after"/>
+        </methods>
+      </class> <!-- test.DashboardTest -->
+    </classes>
+  </test> <!-- Commercial Test(failed) -->
+</suite> <!-- Failed suite [Projekt] -->
