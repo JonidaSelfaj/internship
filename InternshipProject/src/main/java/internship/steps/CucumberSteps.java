@@ -10,6 +10,7 @@ import internship.global.GlobalVariables;
 import internship.page.LoginPage;
 import internship.page.MyAccountPage;
 import internship.page.RegisterPage;
+import internship.page.ShopingCartPage;
 
 
 public class CucumberSteps {
@@ -20,6 +21,8 @@ public class CucumberSteps {
     private LoginPage loginPage;
     private MyAccountPageSteps pageSteps;
     private DashboardSteps dashboardSteps;
+    private ShoppingCartSteps shoppingCartSteps;
+
 
     @Given("^Browser is open in CommercialPage$")
     public void browser_is_open_in_CommercialPage() {
@@ -30,6 +33,8 @@ public class CucumberSteps {
         loginPage = new LoginPage();
         pageSteps = new MyAccountPageSteps();
         dashboardSteps = new DashboardSteps();
+        shoppingCartSteps = new ShoppingCartSteps();
+
         Driver.go(GlobalVariables.APP_URL);
     }
 
@@ -39,12 +44,12 @@ public class CucumberSteps {
         register.registerClick();
     }
 
-    @And("^you select gender \"([^\"]*)\"$")
+    @And("^you select gender (.+)$")
     public void you_select_gender(final String gender) {
         register.radioButtonGenderClick(gender);
     }
 
-    @And("^you enter \"([^\"]*)\" in firstName Field and  lastName Field \"([^\"]*)\"$")
+    @And("^you enter (.+) in firstName Field and lastName Field (.+)$")
     public void you_enter_in_firstName_Field_and_lastName_Field(final String firstName, final String lastName) {
         register.fieldFirstName(firstName);
         register.fieldLastName(lastName);
@@ -65,13 +70,13 @@ public class CucumberSteps {
         register.selectYear(birthYear);
     }
 
-    @And("^you enter \"([^\"]*)\" in email Field and companyName Field \"([^\"]*)\"$")
+    @And("^you enter (.+) in email Field and companyName Field (.+)$")
     public void you_enter_in_email_Field_and_companyName_Field(final String email, final String company) {
         register.fieldEmail(email);
         register.fieldCompany(company);
     }
 
-    @And("^you enter \"([^\"]*)\" in password Field and confirmPass Field \"([^\"]*)\"$")
+    @And("^you enter (.+) in password Field and confirmPass Field (.+)$")
     public void you_enter_in_password_Field_and_confirmPass_Field(final String password, final String confirmPass) {
         register.fieldPass(password);
         register.fieldConfirmPass(confirmPass);
@@ -92,12 +97,6 @@ public class CucumberSteps {
         register.logOutClick();
     }
 
-    @Given("^You enter email \"([^\"]*)\" and password \"([^\"]*)\"$")
-    public void you_enter_email_and_password(final String email, final String password) {
-        login.loginClick();
-        login.login(email, password);
-    }
-
     @When("^we verify loginPage$")
     public void we_verify_loginPage() {
         login.verifyLogIn();
@@ -113,7 +112,7 @@ public class CucumberSteps {
         Driver.quit();
     }
 
-    @And("^click in LoginButton and enter email \"([^\"]*)\" and password \"([^\"]*)\"$")
+    @And("^click in LoginButton and enter email (.+) and password (.+)$")
     public void click_in_LoginButton_and_enter_email_and_password(String email, String password) {
         login.loginClick();
         login.login(email, password);
@@ -125,7 +124,7 @@ public class CucumberSteps {
         pageSteps.checkTitleAccount();
     }
 
-    @And("^verify gender \"([^\"]*)\"$")
+    @And("^verify gender (.+)$")
     public void verify_gender(String gender) {
         pageSteps.radioButtonGenderVerify(gender);
     }
@@ -137,14 +136,14 @@ public class CucumberSteps {
         pageSteps.verifyBirthYear(birthYear);
     }
 
-    @Given("^verify firstName \"([^\"]*)\" , lastname \"([^\"]*)\" and email \"([^\"]*)\"$")
+    @Given("^verify firstName (.+) , lastname (.+) and email (.+)$")
     public void verify_firstName_lastname_and_email(String firstName, String lastName, String email) {
         pageSteps.verifyFirstName(firstName);
         pageSteps.verifyLastName(lastName);
         pageSteps.verifyEmail(email);
     }
 
-    @And("^verify companyName \"([^\"]*)\"$")
+    @And("^verify companyName (.+)$")
     public void verify_companyName(String companyName) {
         pageSteps.verifyCompany(companyName);
     }
@@ -187,9 +186,40 @@ public class CucumberSteps {
     }
 
     @And("^check Qty cart \"([^\"]*)\" and check Qty wishlist \"([^\"]*)\"$")
-    public void check_Qty_cart_and_check_Qty_wishlist(String qtyCart, String qtyWish) {     dashboardSteps.checkQtyCart(qtyCart);
-      dashboardSteps.checkQtyWishList(qtyWish);
+    public void check_Qty_cart_and_check_Qty_wishlist(String qtyCart, String qtyWish) {
+        dashboardSteps.checkQtyCart(qtyCart);
+        dashboardSteps.checkQtyWishList(qtyWish);
     }
+
+    @When("^hover ShoppingCartMenu  and verify goToCart Button$")
+    public void hover_ShoppingCartMenu_and_verify_goToCart_Button() {
+        shoppingCartSteps.hoverShoppingCartMenu();
+        shoppingCartSteps.verifyGoToCartButton();
+    }
+
+    @And("^check title of web page$")
+    public void check_title_of_web_page() {
+        shoppingCartSteps.verifyTitle();
+    }
+
+    @And("^verify if the buttons are Displayed$")
+    public void verify_if_the_buttons_are_Displayed() {
+        shoppingCartSteps.verifyButtonDisplayed();
+    }
+
+    @And("^check the subTotal price of items$")
+    public void check_the_subTotal_price_of_items() {
+        shoppingCartSteps.sumSubTotalPrice();
+    }
+
+    @And("^remove items from shoppingCart$")
+    public void remove_items_from_shoppingCart() {
+        shoppingCartSteps.hoverShoppingCartMenu();
+        shoppingCartSteps.verifyGoToCartButton();
+        shoppingCartSteps.verifyTitle();
+        shoppingCartSteps.removeItemToShoppingCart();
+    }
+
 
 }
 

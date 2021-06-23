@@ -1,6 +1,6 @@
 test\MyAccountTest.class
 test\LoginTest.class
 test\DashboardTest.class
-test\ShoppingCartTest.class
 test\EmptyShoppingCartTest.class
+test\ShoppingCartTest.class
 test\RegisterTest.class

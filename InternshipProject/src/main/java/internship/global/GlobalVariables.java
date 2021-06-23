@@ -13,7 +13,7 @@ public class GlobalVariables {
     public static final String BIRTH_DAY ="24";
     public static final String BIRTH_MONTH ="June";
     public static final String BIRTH_YEAR ="1996";
-    public static final String EMAIL ="joni1057@gmail.com";
+    public static final String EMAIL ="joni10087@gmail.com";
     public static final String COMPANY_NAME ="lhind";
     public static final String PASSWORD ="jonida123";
     public static final String LOGIN_RESULT = "Welcome to our store";

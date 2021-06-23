@@ -2,90 +2,90 @@
 <testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Projekt" duration-ms="172066" started-at="2021-06-13T12:54:21 CEST" finished-at="2021-06-13T12:57:13 CEST">
+  <suite name="Projekt" duration-ms="178809" started-at="2021-06-17T16:45:29 CEST" finished-at="2021-06-17T16:48:28 CEST">
     <groups>
     </groups>
-    <test name="Commercial Test" duration-ms="172066" started-at="2021-06-13T12:54:21 CEST" finished-at="2021-06-13T12:57:13 CEST">
+    <test name="Commercial Test" duration-ms="178809" started-at="2021-06-17T16:45:29 CEST" finished-at="2021-06-17T16:48:28 CEST">
       <class name="test.RegisterTest">
-        <test-method status="PASS" signature="before()[pri:0, instance:test.RegisterTest@39c0f4a]" name="before" is-config="true" duration-ms="2659" started-at="2021-06-13T12:54:21 CEST" finished-at="2021-06-13T12:54:24 CEST">
+        <test-method status="PASS" signature="before()[pri:0, instance:test.RegisterTest@343f4d3d]" name="before" is-config="true" duration-ms="2924" started-at="2021-06-17T16:45:29 CEST" finished-at="2021-06-17T16:45:32 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="execute()[pri:0, instance:test.RegisterTest@39c0f4a]" name="execute" duration-ms="19172" started-at="2021-06-13T12:54:24 CEST" finished-at="2021-06-13T12:54:43 CEST">
+        <test-method status="PASS" signature="execute()[pri:0, instance:test.RegisterTest@343f4d3d]" name="execute" duration-ms="20755" started-at="2021-06-17T16:45:32 CEST" finished-at="2021-06-17T16:45:53 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- execute -->
-        <test-method status="PASS" signature="after()[pri:0, instance:test.RegisterTest@39c0f4a]" name="after" is-config="true" duration-ms="183" started-at="2021-06-13T12:54:43 CEST" finished-at="2021-06-13T12:54:43 CEST">
+        <test-method status="PASS" signature="after()[pri:0, instance:test.RegisterTest@343f4d3d]" name="after" is-config="true" duration-ms="4170" started-at="2021-06-17T16:45:53 CEST" finished-at="2021-06-17T16:45:57 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
       </class> <!-- test.RegisterTest -->
       <class name="test.MyAccountTest">
-        <test-method status="PASS" signature="before()[pri:0, instance:test.MyAccountTest@42e26948]" name="before" is-config="true" duration-ms="1398" started-at="2021-06-13T12:55:01 CEST" finished-at="2021-06-13T12:55:02 CEST">
+        <test-method status="PASS" signature="before()[pri:0, instance:test.MyAccountTest@5442a311]" name="before" is-config="true" duration-ms="1630" started-at="2021-06-17T16:46:17 CEST" finished-at="2021-06-17T16:46:19 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="execute()[pri:0, instance:test.MyAccountTest@42e26948]" name="execute" duration-ms="15681" started-at="2021-06-13T12:55:02 CEST" finished-at="2021-06-13T12:55:18 CEST">
+        <test-method status="PASS" signature="execute()[pri:0, instance:test.MyAccountTest@5442a311]" name="execute" duration-ms="14112" started-at="2021-06-17T16:46:19 CEST" finished-at="2021-06-17T16:46:33 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- execute -->
-        <test-method status="PASS" signature="after()[pri:0, instance:test.MyAccountTest@42e26948]" name="after" is-config="true" duration-ms="130" started-at="2021-06-13T12:55:18 CEST" finished-at="2021-06-13T12:55:18 CEST">
+        <test-method status="PASS" signature="after()[pri:0, instance:test.MyAccountTest@5442a311]" name="after" is-config="true" duration-ms="178" started-at="2021-06-17T16:46:33 CEST" finished-at="2021-06-17T16:46:33 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
       </class> <!-- test.MyAccountTest -->
       <class name="test.DashboardTest">
-        <test-method status="PASS" signature="before()[pri:0, instance:test.DashboardTest@57baeedf]" name="before" is-config="true" duration-ms="1472" started-at="2021-06-13T12:55:18 CEST" finished-at="2021-06-13T12:55:19 CEST">
+        <test-method status="PASS" signature="before()[pri:0, instance:test.DashboardTest@548e7350]" name="before" is-config="true" duration-ms="1529" started-at="2021-06-17T16:46:33 CEST" finished-at="2021-06-17T16:46:35 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="execute()[pri:0, instance:test.DashboardTest@57baeedf]" name="execute" duration-ms="71404" started-at="2021-06-13T12:55:19 CEST" finished-at="2021-06-13T12:56:31 CEST">
+        <test-method status="PASS" signature="execute()[pri:0, instance:test.DashboardTest@548e7350]" name="execute" duration-ms="67242" started-at="2021-06-17T16:46:35 CEST" finished-at="2021-06-17T16:47:42 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- execute -->
-        <test-method status="PASS" signature="after()[pri:0, instance:test.DashboardTest@57baeedf]" name="after" is-config="true" duration-ms="113" started-at="2021-06-13T12:56:31 CEST" finished-at="2021-06-13T12:56:31 CEST">
+        <test-method status="PASS" signature="after()[pri:0, instance:test.DashboardTest@548e7350]" name="after" is-config="true" duration-ms="175" started-at="2021-06-17T16:47:42 CEST" finished-at="2021-06-17T16:47:42 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
       </class> <!-- test.DashboardTest -->
       <class name="test.LoginTest">
-        <test-method status="PASS" signature="before()[pri:0, instance:test.LoginTest@1794d431]" name="before" is-config="true" duration-ms="1523" started-at="2021-06-13T12:54:43 CEST" finished-at="2021-06-13T12:54:45 CEST">
+        <test-method status="PASS" signature="before()[pri:0, instance:test.LoginTest@53b32d7]" name="before" is-config="true" duration-ms="1624" started-at="2021-06-17T16:45:57 CEST" finished-at="2021-06-17T16:45:59 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="execute()[pri:0, instance:test.LoginTest@1794d431]" name="execute" duration-ms="15873" started-at="2021-06-13T12:54:45 CEST" finished-at="2021-06-13T12:55:01 CEST">
+        <test-method status="PASS" signature="execute()[pri:0, instance:test.LoginTest@53b32d7]" name="execute" duration-ms="18543" started-at="2021-06-17T16:45:59 CEST" finished-at="2021-06-17T16:46:17 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- execute -->
-        <test-method status="PASS" signature="after()[pri:0, instance:test.LoginTest@1794d431]" name="after" is-config="true" duration-ms="163" started-at="2021-06-13T12:55:01 CEST" finished-at="2021-06-13T12:55:01 CEST">
+        <test-method status="PASS" signature="after()[pri:0, instance:test.LoginTest@53b32d7]" name="after" is-config="true" duration-ms="200" started-at="2021-06-17T16:46:17 CEST" finished-at="2021-06-17T16:46:17 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
       </class> <!-- test.LoginTest -->
       <class name="test.EmptyShoppingCartTest">
-        <test-method status="PASS" signature="before()[pri:0, instance:test.EmptyShoppingCartTest@53b32d7]" name="before" is-config="true" duration-ms="1499" started-at="2021-06-13T12:56:49 CEST" finished-at="2021-06-13T12:56:50 CEST">
+        <test-method status="PASS" signature="before()[pri:0, instance:test.EmptyShoppingCartTest@4667ae56]" name="before" is-config="true" duration-ms="1602" started-at="2021-06-17T16:48:04 CEST" finished-at="2021-06-17T16:48:05 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="execute()[pri:0, instance:test.EmptyShoppingCartTest@53b32d7]" name="execute" duration-ms="22542" started-at="2021-06-13T12:56:50 CEST" finished-at="2021-06-13T12:57:13 CEST">
+        <test-method status="PASS" signature="execute()[pri:0, instance:test.EmptyShoppingCartTest@4667ae56]" name="execute" duration-ms="22555" started-at="2021-06-17T16:48:05 CEST" finished-at="2021-06-17T16:48:28 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- execute -->
-        <test-method status="PASS" signature="after()[pri:0, instance:test.EmptyShoppingCartTest@53b32d7]" name="after" is-config="true" duration-ms="135" started-at="2021-06-13T12:57:13 CEST" finished-at="2021-06-13T12:57:13 CEST">
+        <test-method status="PASS" signature="after()[pri:0, instance:test.EmptyShoppingCartTest@4667ae56]" name="after" is-config="true" duration-ms="158" started-at="2021-06-17T16:48:28 CEST" finished-at="2021-06-17T16:48:28 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
       </class> <!-- test.EmptyShoppingCartTest -->
       <class name="test.ShoppingCartTest">
-        <test-method status="PASS" signature="before()[pri:0, instance:test.ShoppingCartTest@343f4d3d]" name="before" is-config="true" duration-ms="1535" started-at="2021-06-13T12:56:31 CEST" finished-at="2021-06-13T12:56:32 CEST">
+        <test-method status="PASS" signature="before()[pri:0, instance:test.ShoppingCartTest@1a968a59]" name="before" is-config="true" duration-ms="1558" started-at="2021-06-17T16:47:42 CEST" finished-at="2021-06-17T16:47:44 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="execute()[pri:0, instance:test.ShoppingCartTest@343f4d3d]" name="execute" duration-ms="16377" started-at="2021-06-13T12:56:32 CEST" finished-at="2021-06-13T12:56:49 CEST">
+        <test-method status="PASS" signature="execute()[pri:0, instance:test.ShoppingCartTest@1a968a59]" name="execute" duration-ms="19568" started-at="2021-06-17T16:47:44 CEST" finished-at="2021-06-17T16:48:03 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- execute -->
-        <test-method status="PASS" signature="after()[pri:0, instance:test.ShoppingCartTest@343f4d3d]" name="after" is-config="true" duration-ms="144" started-at="2021-06-13T12:56:49 CEST" finished-at="2021-06-13T12:56:49 CEST">
+        <test-method status="PASS" signature="after()[pri:0, instance:test.ShoppingCartTest@1a968a59]" name="after" is-config="true" duration-ms="231" started-at="2021-06-17T16:48:03 CEST" finished-at="2021-06-17T16:48:04 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
